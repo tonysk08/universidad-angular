@@ -12,4 +12,8 @@ export class PersonaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nombre:string = 'Juan';
+  apellido:String = 'Perez'
+  edad:number = 20;
+
 }
