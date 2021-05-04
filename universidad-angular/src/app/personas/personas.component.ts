@@ -13,6 +13,7 @@ export class PersonasComponent implements OnInit {
   }
   deshabilitar = false
   mensaje:string = 'No se ha agregado ninguna persona'
+  titulo='test Value'
 
   agregarPersona(){
     this.mensaje='Persona Agregada'
