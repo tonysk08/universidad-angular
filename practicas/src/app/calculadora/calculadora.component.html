@@ -1,0 +1,24 @@
+<mat-grid-list cols="4" rowHeight="2:1">
+    <mat-grid-tile [colspan]=1 [rowspan]=2 [style.background]="'#f0f0f0'">
+        <div class="data">
+            <mat-form-field appearance="fill">
+                <mat-label>Numero 1</mat-label>
+                <input matInput type="number" [(ngModel)]=a>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Numero 2</mat-label>
+                <input matInput type="number" [(ngModel)]=b>
+            </mat-form-field>
+        <button mat-fab color="primary" (click)='getResult()'><mat-icon>add_circle_outline</mat-icon></button>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" [style.background]="'#f0f0f0'">
+        <h1>{{a}}</h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2" [style.background]="'#f0f0f0'">
+        <h1>{{getResult()}}</h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" [style.background]="'#f0f0f0'">
+        <h1>{{b}}</h1>
+    </mat-grid-tile>
+</mat-grid-list>

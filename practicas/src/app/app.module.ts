@@ -3,18 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms'
 
 //material modules
-import { MaterialModule } from '../ExtraModules/material.module'
+import { MaterialModule } from '../ExtraModules/material.module';
+
+//componentes
+import { CalculadoraComponent } from './calculadora/calculadora.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
